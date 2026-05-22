@@ -81,6 +81,22 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        arrowrs: arrowrs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "ARROWRS";
+        };
+
+        arrowjs: arrowjs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "ARROWJS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -99,10 +115,10 @@
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6             &kp N7          &kp N8           &kp N9    &kp N0     &none
-&none  &none   &none   &none   &none   &none             &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT   &none
-&none  &none   &none   &none   &none   &none   &trans            &trans          &kp SINGLE_QUOTE   &kp UNDERSCORE  &kp MINUS        &kp PLUS  &kp EQUAL  &none
-                       &none   &none   &none                                     &mo 3              &kp TAB         &none
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6                &kp N7          &kp N8           &kp N9    &kp N0     &none
+&none  &none   &none   &none   &none   &none             &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT   &kp RIGHT_PARENTHESIS
+&none  &none   &none   &none   &none   &none   &trans            &trans          &none                 &kp UNDERSCORE  &kp MINUS        &kp PLUS  &kp EQUAL  &none
+                       &none   &none   &none                                     &mo 3                 &kp TAB         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -111,10 +127,10 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&none  &kp EXCL  &kp AT     &kp HASH              &kp DLLR               &kp PRCNT                    &trans          &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &none
-&none  &none     &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE            &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &none     &none
-&none  &kp CAPS  &none      &kp PIPE              &kp BACKSLASH          &none      &trans            &trans          &none      &none     &none      &none      &none     &none
-                            &none                 &kp DEL                &mo 3                                        &none      &none     &none
+&none         &kp EXCL  &kp AT     &kp HASH          &kp DLLR           &kp PRCNT                    &trans          &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &none
+&none         &none     &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp TILDE            &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &none     &none
+&kp CAPSLOCK  &arrowrs  &arrowjs   &kp PIPE          &kp BACKSLASH      &none      &trans            &trans          &none      &none     &none      &none      &none     &none
+                                   &none             &kp DEL            &mo 3                                        &none      &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
