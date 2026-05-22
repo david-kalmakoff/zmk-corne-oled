@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - {t: '-', s: _}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
@@ -28,7 +28,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$', s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - X
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '=', s: +}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - NUMBER
@@ -72,7 +72,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '"'
   - '{'
   - '}'
   - {t: '[', s: '{'}
@@ -86,7 +86,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: '"'}
   - _
   - {t: '-', s: _}
   - +
@@ -114,10 +114,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - (
   - )
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
