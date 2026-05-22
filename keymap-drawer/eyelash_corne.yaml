@@ -72,12 +72,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '"'
+  - (
   - '{'
   - '}'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -86,7 +86,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
   - {t: '-', s: _}
   - +
@@ -115,8 +115,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - (
-  - )
+  - {t: '''', s: '"'}
+  - '"'
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -127,9 +127,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&arrowrs'
+  - '&arrowjs'
   - '|'
   - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
