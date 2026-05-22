@@ -111,10 +111,10 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT                    &trans          &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &none
-&none  &none     &none   &kp LS(PIPE)  &kp BSLH  &none                &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &none     &none
-&none  &kp CAPS  &none   &none         &none     &none      &trans            &trans          &none      &none     &none      &none      &none     &none
-                         &none         &kp DEL   &mo 3                                        &none      &none     &none
+&none  &kp EXCL  &kp AT  &kp HASH              &kp DLLR               &kp PRCNT                    &trans          &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &none
+&none  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &none     &none
+&none  &kp CAPS  &none   &kp PIPE              &kp BACKSLASH          &none      &trans            &trans          &none      &none     &none      &none      &none     &none
+                         &none                 &kp DEL                &mo 3                                        &none      &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
